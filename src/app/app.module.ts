@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 
 import { routing } from './app.routing';
 
+import { Property } from './shared/property';
+import { PropertiesService } from './shared/properties.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { routing } from './app.routing';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [PropertiesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
